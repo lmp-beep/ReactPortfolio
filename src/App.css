@@ -1,35 +1,33 @@
-.App {
-  color: #F7F9FB;
+html {
+  background-color: #f7f9fb;
 }
 
 .App-logo {
-  height: 25vmin;
-  pointer-events: none;
+  width: 30%;
+  margin-left: 10%;
 }
 
 .App-header {
-  /* background-color: #F7F9FB; */
-  /* min-height: 100vh; */
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
-  /* color: white; */
   padding: 50px;
-  /* padding-left: 250px; */
 }
 
 a.navbar {
   text-decoration: none;
   color: #5d5c5d;
-  font-size: 24px;
+  font-size: 16px;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  /* font-weight: 300; */
   letter-spacing: 10px;
   padding-left: 10px;
   padding-top: 20px;
   display: block;
+}
+
+a.navbar:hover {
+  color: #ee028d !important;
+  text-decoration: none;
 }
 
 .main {
@@ -38,7 +36,7 @@ a.navbar {
 
 #github {
   text-decoration: none;
-  height: 50px;
+  height: 40px;
   opacity: 20%;
   padding: 0px 0px 30px 0px;
 }
@@ -49,7 +47,7 @@ a.navbar {
 
 #linkedin {
   text-decoration: none;
-  height: 50px;
+  height: 40px;
   opacity: 20%;
   padding: 30px 0px;
 }
@@ -60,7 +58,7 @@ a.navbar {
 
 #photo {
   text-decoration: none;
-  height: 50px;
+  height: 40px;
   opacity: 20%;
   padding: 30px 0px;
 }
@@ -71,17 +69,19 @@ a.navbar {
 
 .sidenav {
   height: 100%;
-  width: 100px;
+  /* width: 80px; */
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
+
   /* padding-top: 280px; */
 }
 
 .sidenav a {
-  padding: 6px 6px 6px 32px;
+  /* padding: 6px 6px 6px 32px; */
+  padding-top: 10px;
   text-decoration: none;
-  font-size: 25px;
+  /* font-size: 25px; */
   color: #818181;
   display: block;
 }
@@ -91,14 +91,19 @@ a.navbar {
   color: #8b8b8b;
   font-size: 12px;
   text-align: center;
-  margin-top: 45%;
 }
 
-/* -------------------------------------------------- */
-
-.hide-portfolio {
-  /* display: none; */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
+
+/* ---------------------PORTFOLIO----------------------------- */
+
+/* .hide-portfolio {
+  display: none;
+} */
 
 .portfolio.col-sm-6.col-md-4 {
   /* border: #5d5c5d 1px solid; */
@@ -112,7 +117,7 @@ a.navbar {
   padding: 0 0 1em 8em;
   max-width: 1000px;
   list-style: none;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .grid figure {
@@ -141,7 +146,7 @@ a.navbar {
   /* padding: 2em; */
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.25em;
+  /* font-size: 1.25em; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -157,12 +162,16 @@ a.navbar {
 
 .grid figure h2 {
   margin: 0;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .grid figure h2 {
+  /* align-items: center;
+  justify-content: center; */
   letter-spacing: 1px;
   /* font-size: 100%; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
   /* text-align: center; */
@@ -181,7 +190,7 @@ figure.effect-bubba figcaption::after {
   right: 30px;
   bottom: 30px;
   left: 30px;
-  content: '';
+  content: "";
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -190,24 +199,25 @@ figure.effect-bubba figcaption::after {
 figure.effect-bubba figcaption::before {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  -webkit-transform: scale(0,1);
-  transform: scale(0,1);
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
 }
 
 figure.effect-bubba figcaption::after {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
-  -webkit-transform: scale(1,0);
-  transform: scale(1,0);
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
 }
 
 figure.effect-bubba h2 {
-  padding: 150px 2.5em;
+  /* padding: 150px 2.5em; */
+  padding-top: 30%;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,20px,0);
-  transform: translate3d(0,20px,0);
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
 }
 
 figure.effect-bubba:hover figcaption::before,
@@ -219,6 +229,29 @@ figure.effect-bubba:hover figcaption::after {
 
 figure.effect-bubba:hover h2 {
   opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* ---------------------ABOUT----------------------------- */
+
+/* .hide-about-me {
+  display: none;
+} */
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+#frame-photo {
+  max-height: 500px;
+}
+
+.bio {
+  margin-left: 30%;
+}
+
+#bio {
+  margin-top: 10%;
 }
