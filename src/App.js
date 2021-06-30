@@ -1,11 +1,15 @@
 import React from "react";
 
 import "./App.css";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from "./components/header";
 import Portfolio from "./components/portfolio";
 import About from "./components/about";
+import ContactForm from "./components/contact";
 import Footer from "./components/footer";
+import Test from "./components/test";
+
 
 function App() {
   return (
@@ -14,12 +18,20 @@ function App() {
         <Header />
       </div>
 
-      <div>
+      {/* <div>
         <Portfolio />
-      </div>
+      </div> */}
 
       {/* <div>
         <About/>
+      </div> */}
+
+      <div>
+        <ContactForm/>
+      </div>
+
+      {/* <div>
+        <Test/>
       </div> */}
 
       {/* <div>

@@ -99,6 +99,37 @@ a.navbar:hover {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .App-header {
+    padding: 0;
+  }
+  a.navbar {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .sidenav a {
+    /* display: hide; */
+    /* display: inline-block; */
+    padding: 0px 0px 10px 0px;
+    /* position: static; */
+  }
+  .main {
+    /* position: absolute; */
+  }
+  #github {
+    height: 30px;
+    padding: 30px 0px 10px 0px;
+  }
+  #linkedin {
+    height: 30px;
+    padding: 0px 0px 10px 0px;
+  }
+  #photo {
+    height: 30px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
 /* ---------------------PORTFOLIO----------------------------- */
 
 /* .hide-portfolio {
@@ -233,6 +264,21 @@ figure.effect-bubba:hover h2 {
   transform: translate3d(0, 0, 0);
 }
 
+@media screen and (max-width: 767px) {
+  .grid {
+    /* padding-top: 25%; */
+    /* max-width: 50%; */
+    padding: 1em 0 1em 7em;
+    /* width: 0px; */
+  }
+  .grid figure h2 {
+    font-size: 24px;
+  }
+  /* .thumbnail, .grid figure {
+    width: 200px !important;
+  } */
+}
+
 /* ---------------------ABOUT----------------------------- */
 
 /* .hide-about-me {
@@ -242,16 +288,52 @@ figure.effect-bubba:hover h2 {
 .about {
   display: flex;
   flex-direction: row;
+  /* justify-content: 'space-around' */
 }
 
 #frame-photo {
-  max-height: 500px;
+  max-height: 400px;
 }
 
-.bio {
+/* .bio {
   margin-left: 30%;
-}
+} */
 
 #bio {
-  margin-top: 10%;
+  /* margin-top: 10%; */
+  margin-left: 13%;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    display: block;
+  }
+  #bio{
+    /* padding-top: 50px; */
+  }
+  .bio{
+    font-size: 12px;
+    margin-right: 7%;
+    margin-left: 18%;
+  }
+  #frame-photo {
+    max-width: 60%;
+    padding-left: 22%;
+    padding-top: 25px;
+  }
+}
+
+/* ---------------------CONTACT----------------------------- */
+
+.form {
+  margin: 20px;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }
