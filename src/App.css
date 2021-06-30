@@ -310,10 +310,10 @@ figure.effect-bubba:hover h2 {
   .about {
     display: block;
   }
-  #bio{
+  #bio {
     /* padding-top: 50px; */
   }
-  .bio{
+  .bio {
     font-size: 12px;
     margin-right: 7%;
     margin-left: 18%;
@@ -327,13 +327,243 @@ figure.effect-bubba:hover h2 {
 
 /* ---------------------CONTACT----------------------------- */
 
-.form {
-  margin: 20px;
+.card {
+  padding-left: 20%;
 }
 
-.form input {
+.contact-form-card {
+  width: 800px;
+  height: 450px;
+  padding: 15px;
+  margin: auto;
+  background-color: #ee028d;
+}
+
+/* .contact-form-container {
+  margin: auto;
   display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.form-group {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+}
+
+a {
+  font-weight: 500;
+}
+
+.form-header {
+  height: 75px;
+  width: 80%;
+  background-color: #ee028d;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+#form-input-control-last-name {
+  width: 80%;
+  height: 30px;
+  margin: 2px 0 30px 0;
+  border-radius: 5px;
+  border: transparent;
+}
+
+#form-input-control-last-name:focus {
+  box-shadow: none !important;
+  border-color: white !important;
+  outline: none;
+}
+
+#form-input-control-email {
+  width: 80%;
+  height: 30px;
+  margin: 2px 0 30px 0;
+  border-radius: 5px;
+  border: transparent;
+}
+
+#form-input-control-email:focus {
+  box-shadow: none !important;
+  border-color: white !important;
+  outline: none;
+}
+
+#form-textarea-control-opinion {
+  width: 80%;
+  height: 60px;
+  margin: 2px 0 30px 0;
+  border-radius: 5px;
+  border: transparent;
+}
+
+#form-textarea-control-opinion:focus {
+  box-shadow: none !important;
+  border-color: white !important;
+  outline: none;
+}
+
+.submit-btn {
+  padding-left: 30%;
+}
+
+.submit-button {
+  color: #ffffff;
+  background-color: #af0267;
+  height: 50px;
+  width: 100px;
+  border: none !important;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: ;
+}
+
+.submit-button:hover {
+  background-color: #990d5f;
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .contact-form-card {
+    width: 700px;
+  }
+  .card {
+    padding-left: 5%;
+  }
+  .form-header {
+    width: 470px;
+    padding-left: 10%;
+    padding-bottom: 5%;
+  }
+  #form-input-control-last-name {
+    width: 80%;
+  }
+  #form-input-control-email {
+    width: 80%;
+  }
+  #form-textarea-control-opinion {
+    width: 80%;
+  }
+  .form-group {
+    margin-left: 50px;
+  }
+  .submit-btn {
+    padding-left: 40%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contact-form-card {
+    width: 600px;
+  }
+  .card {
+    padding-left: 5%;
+  }
+  .form-header {
+    width: 350px;
+    padding-left: 15%;
+    padding-bottom: 5%;
+  }
+  #form-input-control-last-name {
+    width: 80%;
+  }
+  #form-input-control-email {
+    width: 80%;
+  }
+  #form-textarea-control-opinion {
+    width: 80%;
+  }
+  .form-group {
+    margin-left: 30px;
+  }
+  .submit-btn {
+    padding-left: 35%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact-form-card {
+    width: 500px;
+  }
+  .card {
+    padding-left: 5%;
+  }
+  .form-header {
+    width: 250px;
+    padding: 0 0 20px 90px;
+  }
+  #form-input-control-last-name {
+    width: 90%;
+  }
+  #form-input-control-email {
+    width: 90%;
+  }
+  #form-textarea-control-opinion {
+    width: 90%;
+  }
+  .submit-btn {
+    padding-left: 30%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contact-form-card {
+    width: 400px;
+  }
+  .card {
+    padding-left: 5%;
+  }
+  .form-header {
+    width: 250px;
+    padding: 0 0 20px 50px;
+  }
+  #form-input-control-last-name {
+    width: 90%;
+  }
+  #form-input-control-email {
+    width: 90%;
+  }
+  #form-textarea-control-opinion {
+    width: 90%;
+  }
+  .submit-btn {
+    padding-left: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact-form-card {
+    width: 300px;
+    height: 500px;
+  }
+  .card {
+    padding-left: 5%;
+  }
+  .form-header {
+    width: 250px;
+    padding: 0 0 60px 0;
+  }
+  #form-input-control-last-name {
+    width: 90%;
+  }
+  #form-input-control-email {
+    width: 90%;
+  }
+  #form-textarea-control-opinion {
+    width: 90%;
+  }
+  .submit-btn {
+    padding-left: 30%;
+  }
 }
