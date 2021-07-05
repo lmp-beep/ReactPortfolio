@@ -5,7 +5,7 @@ import github from "./images/github.svg";
 import linkedin from "./images/linkedin.svg";
 import camera from "./images/camera-fill.svg";
 
-function Header() {
+function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className="App">
       <header className="App-header">
@@ -13,13 +13,37 @@ function Header() {
 
         <div className="navbar">
           <ul>
-            <a className="navbar" id="portfolio" href="#Portfolio">
+            <a
+              className="navbar"
+              id="portfolio"
+              href="#home"
+              onClick={() => handlePageChange("home")}
+              className={
+                currentPage === "home" ? "nav-link active" : "nav-link"
+              }
+            >
               PORTFOLIO
             </a>
-            <a className="navbar" id="about" href="#About">
+            <a
+              className="navbar"
+              id="about"
+              href="#about"
+              onClick={() => handlePageChange("about")}
+              className={
+                currentPage === "about" ? "nav-link active" : "nav-link"
+              }
+            >
               ABOUT
             </a>
-            <a className="navbar" id="contact" href="#Contact">
+            <a
+              className="navbar"
+              id="contact"
+              href="#contact"
+              onClick={() => handlePageChange("contact")}
+              className={
+                currentPage === "contact" ? "nav-link active" : "nav-link"
+              }
+            >
               CONTACT
             </a>
           </ul>
@@ -35,7 +59,7 @@ function Header() {
             <img id="linkedin" src={linkedin} alt=""></img>
           </a>
           <a
-            href="https://lmp-beep.github.io/PhotographyPortfolio/p"
+            href="https://lmp-beep.github.io/PhotographyPortfolio/"
             target="blank"
           >
             <img id="photo" src={camera} alt=""></img>
@@ -46,4 +70,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default NavTabs;

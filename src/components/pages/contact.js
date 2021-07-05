@@ -1,9 +1,16 @@
-import React from "react";
+import React, {useState} from 'react';
 import emailjs from "emailjs-com";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import swal from "sweetalert2";
 
+// import EmailValidator from 'email-validator';
+// import * as EmailValidator from 'email-validator';
+// EmailValidator.validate("test@email.com"); // true
+
 const ContactForm = () => {
+    // const [emailInput, setEmail] = useState("");
+    // const [validEmail, validateEmail] = useState(true);
+    
   const handleFormSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -48,8 +55,6 @@ const ContactForm = () => {
               control={Input}
               name="user_name"
               required
-              //   icon="user circle"
-              //   iconPosition="left"
             />
           </div>
 
@@ -61,8 +66,10 @@ const ContactForm = () => {
               name="user_email"
               placeholder="name@example.com"
               required
-              // icon="mail"
-              //   iconPosition="left"
+            //   validators={['matchRegexp:/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/']}
+            
+         
+            
             />
           </div>
 
@@ -79,12 +86,6 @@ const ContactForm = () => {
           <div className="submit-btn">
             <Button className="submit-button">SUBMIT</Button>
           </div>
-
-          {/* <Button 
-          label="Send Message" 
-          icon="send" 
-          color="green" 
-          /> */}
         </Form>
       </div>
     </div>

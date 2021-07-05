@@ -13,19 +13,22 @@ html {
   padding: 50px;
 }
 
-a.navbar {
+#portfolio.nav-link,
+#about.nav-link,
+#contact.nav-link {
   text-decoration: none;
   color: #5d5c5d;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
-  /* font-weight: 300; */
   letter-spacing: 10px;
   padding-left: 10px;
   padding-top: 20px;
   display: block;
 }
 
-a.navbar:hover {
+#portfolio.nav-link:hover,
+#about.nav-link:hover,
+#contact.nav-link:hover {
   color: #ee028d !important;
   text-decoration: none;
 }
@@ -69,19 +72,14 @@ a.navbar:hover {
 
 .sidenav {
   height: 100%;
-  /* width: 80px; */
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
-
-  /* padding-top: 280px; */
 }
 
 .sidenav a {
-  /* padding: 6px 6px 6px 32px; */
   padding-top: 10px;
   text-decoration: none;
-  /* font-size: 25px; */
   color: #818181;
   display: block;
 }
@@ -108,13 +106,7 @@ a.navbar:hover {
     padding: 6px;
   }
   .sidenav a {
-    /* display: hide; */
-    /* display: inline-block; */
     padding: 0px 0px 10px 0px;
-    /* position: static; */
-  }
-  .main {
-    /* position: absolute; */
   }
   #github {
     height: 30px;
@@ -132,12 +124,7 @@ a.navbar:hover {
 
 /* ---------------------PORTFOLIO----------------------------- */
 
-/* .hide-portfolio {
-  display: none;
-} */
-
 .portfolio.col-sm-6.col-md-4 {
-  /* border: #5d5c5d 1px solid; */
   height: 500px;
   border-radius: 50px;
 }
@@ -148,7 +135,6 @@ a.navbar:hover {
   padding: 0 0 1em 8em;
   max-width: 1000px;
   list-style: none;
-  /* text-align: center; */
 }
 
 .grid figure {
@@ -174,10 +160,8 @@ a.navbar:hover {
 }
 
 .grid figure figcaption {
-  /* padding: 2em; */
   color: #fff;
   text-transform: uppercase;
-  /* font-size: 1.25em; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -193,21 +177,13 @@ a.navbar:hover {
 
 .grid figure h2 {
   margin: 0;
-  /* align-items: center;
-  justify-content: center; */
 }
 
 .grid figure h2 {
-  /* align-items: center;
-  justify-content: center; */
   letter-spacing: 1px;
-  /* font-size: 100%; */
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
-  /* text-align: center; */
-  /* word-spacing: -0.15em;
-  font-weight: 300; */
 }
 
 figure.effect-bubba:hover img {
@@ -242,7 +218,6 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-  /* padding: 150px 2.5em; */
   padding-top: 30%;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -266,41 +241,25 @@ figure.effect-bubba:hover h2 {
 
 @media screen and (max-width: 767px) {
   .grid {
-    /* padding-top: 25%; */
-    /* max-width: 50%; */
     padding: 1em 0 1em 7em;
-    /* width: 0px; */
   }
   .grid figure h2 {
     font-size: 24px;
   }
-  /* .thumbnail, .grid figure {
-    width: 200px !important;
-  } */
 }
 
 /* ---------------------ABOUT----------------------------- */
 
-/* .hide-about-me {
-  display: none;
-} */
-
 .about {
   display: flex;
   flex-direction: row;
-  /* justify-content: 'space-around' */
 }
 
 #frame-photo {
   max-height: 400px;
 }
 
-/* .bio {
-  margin-left: 30%;
-} */
-
 #bio {
-  /* margin-top: 10%; */
   margin-left: 13%;
   margin-top: 5%;
   margin-right: 5%;
@@ -309,9 +268,6 @@ figure.effect-bubba:hover h2 {
 @media screen and (max-width: 767px) {
   .about {
     display: block;
-  }
-  #bio {
-    /* padding-top: 50px; */
   }
   .bio {
     font-size: 12px;
@@ -338,14 +294,6 @@ figure.effect-bubba:hover h2 {
   margin: auto;
   background-color: #ee028d;
 }
-
-/* .contact-form-container {
-  margin: auto;
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .form-group {
   color: white;
@@ -423,7 +371,6 @@ a {
   border: none !important;
   font-weight: bold;
   font-size: 16px;
-  padding-left: ;
 }
 
 .submit-button:hover {

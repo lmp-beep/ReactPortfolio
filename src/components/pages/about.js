@@ -1,6 +1,6 @@
 import React from "react";
 
-import frame from "./images/frame.png";
+import frame from "../images/frame.png";
 
 function About() {
   return (
