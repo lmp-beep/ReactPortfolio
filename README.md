@@ -3,6 +3,7 @@
 https://lmp-beep.github.io/ReactPortfolio/
 
 
-errors:
-favicon
-side nav 
+errors:  
+favicon  
+side nav  
+form validation  
