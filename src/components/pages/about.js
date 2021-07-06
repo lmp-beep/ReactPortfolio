@@ -21,7 +21,7 @@ function About() {
             </a>{' '}
             in July 2021. I am new to the web world, but I love creating
             user-friendly digital designs. I have some knowledge of the back-end
-            stuff, but I have a serious passion for creating intuitive and
+            stuff, but I have a passion for creating intuitive and
             dynamic front-end user experiences.
           </p>
           <p className="bio">

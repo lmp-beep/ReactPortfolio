@@ -55,7 +55,7 @@ html {
   text-decoration: none;
   height: 40px;
   /* opacity: 50%; */
-  color: #C6C7C9;
+  /* color: #C6C7C9; */
   padding: 0px 0px 30px 0px;
 }
 
@@ -66,7 +66,7 @@ html {
 #linkedin {
   text-decoration: none;
   height: 40px;
-  opacity: 20%;
+  /* opacity: 20%; */
   padding: 30px 0px;
 }
 
@@ -77,7 +77,7 @@ html {
 #photo {
   text-decoration: none;
   height: 40px;
-  opacity: 20%;
+  /* opacity: 20%; */
   padding: 30px 0px;
 }
 
