@@ -30,6 +30,11 @@ function About() {
         </div>
 
       </div>
+      <div>
+          <p className="footer-text" id="copyright">
+            COPYRIGHT © LISA PESSIN 2021
+          </p>
+        </div>
     </div>
   );
 }

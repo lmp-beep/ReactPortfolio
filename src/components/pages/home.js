@@ -11,13 +11,11 @@ function Portfolio({ currentPage, handlePageChange }) {
         <div className="row hide-portfolio">
           <figure className="effect-bubba">
             <img src={newsFlashThumb} className="thumbnail" alt="" />
-            <a href="#portfolioNewsFlash"
+            <a
+              href="#portfolioNewsFlash"
 
-
-            // onClick={() => handlePageChange('portfolioVA')}
-            // className={currentPage === 'portfolioVA' ? 'nav-link active' : 'nav-link'}
-
-            
+              // onClick={() => handlePageChange('portfolioVA')}
+              // className={currentPage === 'portfolioVA' ? 'nav-link active' : 'nav-link'}
             >
               <figcaption>
                 <h2>NEWS FLASH</h2>
@@ -51,6 +49,11 @@ function Portfolio({ currentPage, handlePageChange }) {
               </figcaption>
             </a>
           </figure>
+        </div>
+        <div>
+          <p className="footer-text" id="copyright">
+            COPYRIGHT © LISA PESSIN 2021
+          </p>
         </div>
       </div>
     </div>
