@@ -54,7 +54,8 @@ html {
 #github {
   text-decoration: none;
   height: 40px;
-  opacity: 50%;
+  /* opacity: 50%; */
+  color: #C6C7C9;
   padding: 0px 0px 30px 0px;
 }
 
