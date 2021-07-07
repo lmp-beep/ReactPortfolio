@@ -1,5 +1,4 @@
 import React from "react";
-import HoverImage from "react-hover-image";
 
 import logo from "./images/LPlogo.png";
 import github from "./images/github-logo1.png";
@@ -56,11 +55,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         <div className="sidenav">
           <a href="https://github.com/lmp-beep" target="blank">
             <img id="github" src={github} alt=""></img>
-            {/* <HoverImage id="github" src={github} hoverSrc={githubHover}></HoverImage> */}
           </a>
           <a href="https://www.linkedin.com/in/lisa-pessin/" target="blank">
             <img id="linkedin" src={linkedin} alt=""></img>
-            
           </a>
           <a
             href="https://lmp-beep.github.io/PhotographyPortfolio/"
