@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -47,9 +47,9 @@ html {
   text-decoration: none;
 }
 
-.main {
+/* .main {
   margin-left: 50px;
-}
+} */
 
 #github {
   text-decoration: none;
@@ -82,17 +82,34 @@ html {
 } */
 
 .sidenav {
-  height: 100%;
+  /* height: 100%; */
   position: fixed;
+  margin-left: 50px;
   z-index: 1;
   overflow-x: hidden;
 }
 
 .sidenav a {
-  padding-top: 10px;
-  text-decoration: none;
-  color: #818181;
+  /* padding-top: 10px; */
+  /* text-decoration: none; */
+  /* color: #818181; */
   display: block;
+}
+
+.sidenav-contact {
+  position: fixed;
+  margin-left: 50px;
+  z-index: 1;
+  overflow-x: hidden;
+  margin-top: 16px;
+}
+
+.sidenav-contact a {
+  display: block;
+}
+
+.sidenav.col-sm {
+  padding-top: 16px;
 }
 
 #copyright {
@@ -313,9 +330,9 @@ figure.effect-bubba:hover h2 {
   text-align: left;
 }
 
-a {
+/* a {
   font-weight: 500;
-}
+} */
 
 .form-header {
   height: 75px;
@@ -525,4 +542,114 @@ a {
   .submit-btn {
     padding-left: 30%;
   }
+}
+
+/* ---------------------PORTFOLIO PAGES----------------------------- */
+
+.body-info {
+  margin-left: 150px;
+  width: 80%;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.visit-button:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.visit-btns {
+  position: relative;
+  background-color: #f7f9fb;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.visit-button {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee028d;
+  border: none !important;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* #visit-website {
+  border: white solid 17px;
+} */
+
+.description {
+  /* letter-spacing: 1px; */
+  line-height: 1.4;
+}
+
+.image-monitor {
+  width: 100%;
+}
+
+.image-screenshot {
+  width: 100%;
+}
+
+.portfolio-sidenav {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding: 30px 6px 6px 40px;
+}
+
+.port-sidenav {
+  
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #818181;
+  display: block;
+}
+
+#right-arrow {
+  text-decoration: none;
+  height: 40px;
+  opacity: 20%;
+  padding: 0px 0px 30px 0px;
+}
+
+#right-arrow:hover {
+  opacity: 60%;
+}
+
+#left-arrow {
+  text-decoration: none;
+  height: 40px;
+  opacity: 20%;
+  padding: 30px 0px;
+}
+
+#left-arrow:hover {
+  opacity: 60%;
+}
+
+#grid {
+  text-decoration: none;
+  height: 40px;
+  opacity: 20%;
+  padding: 30px 0px;
+}
+
+#grid:hover {
+  opacity: 60%;
 }

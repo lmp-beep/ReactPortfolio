@@ -1,6 +1,9 @@
 import React from "react";
 
 import frame from "../images/frame.png";
+import github from "../images/github-logo1.png";
+import linkedin from "../images/linkedin-logo1.png";
+import camera from "../images/photo-camera1.png";
 
 function About() {
   return (
@@ -15,14 +18,14 @@ function About() {
             Medical and Forensic Photographer for the past 12 years.
           </p>
           <p className="bio">
-            I received my certificate in full-stack web development from the{' '}
+            I received my certificate in full-stack web development from the{" "}
             <a target="blank" href="https://bootcamp.pe.gatech.edu/coding/">
               Georgia Tech Coding Bootcamp
-            </a>{' '}
+            </a>{" "}
             in July 2021. I am new to the web world, but I love creating
             user-friendly digital designs. I have some knowledge of the back-end
-            stuff, but I have a passion for creating intuitive and
-            dynamic front-end user experiences.
+            stuff, but I have a passion for creating intuitive and dynamic
+            front-end user experiences.
           </p>
           <p className="bio">
             Knowledge of: HTML, CSS, JavaScript, Bootstrap, API/JSON, MongoDB,
@@ -33,11 +36,21 @@ function About() {
         <div className="about-me col-sm">
           <img src={frame} className="frame" alt="" id="frame-photo" />
         </div>
-      </div>
-      <div>
-        <p className="footer-text" id="copyright">
-          COPYRIGHT © LISA PESSIN 2021
-        </p>
+
+        <div className="sidenav col-sm">
+          <a href="https://github.com/lmp-beep" target="blank">
+            <img id="github" src={github} alt=""></img>
+          </a>
+          <a href="https://www.linkedin.com/in/lisa-pessin/" target="blank">
+            <img id="linkedin" src={linkedin} alt=""></img>
+          </a>
+          <a
+            href="https://lmp-beep.github.io/PhotographyPortfolio/"
+            target="blank"
+          >
+            <img id="photo" src={camera} alt=""></img>
+          </a>
+        </div>
       </div>
     </div>
   );

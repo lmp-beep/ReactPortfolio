@@ -1,16 +1,19 @@
-import React, {useState} from 'react';
+import React from "react";
 import emailjs from "emailjs-com";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import swal from "sweetalert2";
+import github from "../images/github-logo1.png";
+import linkedin from "../images/linkedin-logo1.png";
+import camera from "../images/photo-camera1.png";
 
 // import EmailValidator from 'email-validator';
 // import * as EmailValidator from 'email-validator';
 // EmailValidator.validate("test@email.com"); // true
 
 const ContactForm = () => {
-    // const [emailInput, setEmail] = useState("");
-    // const [validEmail, validateEmail] = useState(true);
-    
+  // const [emailInput, setEmail] = useState("");
+  // const [validEmail, validateEmail] = useState(true);
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -39,64 +42,68 @@ const ContactForm = () => {
 
   return (
     <div>
-    <div className="contact-form-card">
-      <div className="card">
-        <div className="form-header">
-          <p>
-            I would love to hear from you, so whether you have a question or
-            just want to say hi, please feel free to drop me a line.
-          </p>
-        </div>
-
-        <Form onSubmit={handleFormSubmit}>
-          <div className="form-group">
-            <a>Name</a>
-            <Form.Field
-              id="form-input-control-last-name"
-              control={Input}
-              name="user_name"
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <a>Email</a>
-            <Form.Field
-              id="form-input-control-email"
-              control={Input}
-              name="user_email"
-              placeholder="name@example.com"
-              required
-            //   validators={['matchRegexp:/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/']}
-            
-         
-            
-            />
-          </div>
-
-          <div className="form-group">
-            <a>Message</a>
-            <Form.Field
-              id="form-textarea-control-opinion"
-              control={TextArea}
-              name="user_message"
-              required
-            />
-          </div>
-
-          <div className="submit-btn">
-            <Button className="submit-button">SUBMIT</Button>
-          </div>
-        </Form>
-        
+      <div className="sidenav-contact">
+        <a href="https://github.com/lmp-beep" target="blank">
+          <img id="github" src={github} alt=""></img>
+        </a>
+        <a href="https://www.linkedin.com/in/lisa-pessin/" target="blank">
+          <img id="linkedin" src={linkedin} alt=""></img>
+        </a>
+        <a
+          href="https://lmp-beep.github.io/PhotographyPortfolio/"
+          target="blank"
+        >
+          <img id="photo" src={camera} alt=""></img>
+        </a>
       </div>
-      
-    </div>
-    <div>
-          <p className="footer-text" id="copyright">
-            COPYRIGHT © LISA PESSIN 2021
-          </p>
+      <div className="contact-form-card">
+        <div className="card">
+          <div className="form-header">
+            <p>
+              I would love to hear from you, so whether you have a question or
+              just want to say hi, please feel free to drop me a line.
+            </p>
+          </div>
+
+          <Form onSubmit={handleFormSubmit}>
+            <div className="form-group">
+              <a>Name</a>
+              <Form.Field
+                id="form-input-control-last-name"
+                control={Input}
+                name="user_name"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <a>Email</a>
+              <Form.Field
+                id="form-input-control-email"
+                control={Input}
+                name="user_email"
+                placeholder="name@example.com"
+                required
+                //   validators={['matchRegexp:/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/']}
+              />
+            </div>
+
+            <div className="form-group">
+              <a>Message</a>
+              <Form.Field
+                id="form-textarea-control-opinion"
+                control={TextArea}
+                name="user_message"
+                required
+              />
+            </div>
+
+            <div className="submit-btn">
+              <Button className="submit-button">SUBMIT</Button>
+            </div>
+          </Form>
         </div>
+      </div>
     </div>
   );
 };

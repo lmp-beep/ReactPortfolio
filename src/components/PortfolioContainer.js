@@ -1,36 +1,46 @@
-import React, { useState } from 'react';
+import React from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
-import NavTabs from './NavTabs';
+import NavTabs from "./Navbar";
+import Footer from "./Footer";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import PortfolioNewsFlash from "./pages/portfolioNewsFlash";
+import PortfolioVA from "./pages/portfolioVA";
 
-import Home from './pages/home';
-import About from './pages/about';
-import Contact from './pages/contact';
-import PortfolioVA from './pages/portfolioVA';
-import PortfolioNewsFlash from './pages/portfolioNewsFlash';
-
-export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('home');
-
-  
-  const renderPage = () => {
-    if (currentPage === 'home') {
-      return <Home />;
-    }
-    if (currentPage === 'about') {
-      return <About />;
-    }
-    // if (currentPage === 'portfolioVA') {
-    //   return <PortfolioVA />;
-    // }
-    return <Contact />;
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
-
+export default function App() {
   return (
-    <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-    </div>
+    <Router>
+      <div>
+        <NavTabs />
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/portfolio">
+              <Home />
+            </Route>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
+            </Route>
+            <Route exact path="/portfolioNewsFlash">
+              <PortfolioNewsFlash />
+            </Route>
+            <Route exact path="/portfolioVA">
+              <PortfolioVA />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }

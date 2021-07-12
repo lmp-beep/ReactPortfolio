@@ -1,22 +1,21 @@
 import React from "react";
 
+import github from "../images/github-logo1.png";
+import linkedin from "../images/linkedin-logo1.png";
+import camera from "../images/photo-camera1.png";
+
 import newsFlashThumb from "../images/newsFlash.jpg";
 import vaBackThumb from "../images/vaBack.jpg";
 import placeholderThumb from "../images/placeholder.jpg";
 
-function Portfolio({ currentPage, handlePageChange }) {
+function Portfolio() {
   return (
     <div className="App">
       <div className="grid">
         <div className="row hide-portfolio">
           <figure className="effect-bubba">
             <img src={newsFlashThumb} className="thumbnail" alt="" />
-            <a
-              href="#portfolioNewsFlash"
-
-              // onClick={() => handlePageChange('portfolioVA')}
-              // className={currentPage === 'portfolioVA' ? 'nav-link active' : 'nav-link'}
-            >
+            <a href="#portfolioNewsFlash">
               <figcaption>
                 <h2>NEWS FLASH</h2>
               </figcaption>
@@ -36,7 +35,7 @@ function Portfolio({ currentPage, handlePageChange }) {
             <img src={placeholderThumb} className="thumbnail" alt="" />
             <a href="">
               <figcaption>
-                <h2>PLACEHOLDER</h2>
+                <h2>LISA PESSIN PHOTOGRAPHY</h2>
               </figcaption>
             </a>
           </figure>
@@ -45,16 +44,25 @@ function Portfolio({ currentPage, handlePageChange }) {
             <img src={placeholderThumb} className="thumbnail" alt="" />
             <a href="">
               <figcaption>
-                <h2>PLACEHOLDER</h2>
+                <h2>BOOK SEARCH</h2>
               </figcaption>
             </a>
           </figure>
         </div>
-        <div>
-          <p className="footer-text" id="copyright">
-            COPYRIGHT © LISA PESSIN 2021
-          </p>
-        </div>
+      </div>
+      <div className="sidenav">
+        <a href="https://github.com/lmp-beep" target="blank">
+          <img id="github" src={github} alt=""></img>
+        </a>
+        <a href="https://www.linkedin.com/in/lisa-pessin/" target="blank">
+          <img id="linkedin" src={linkedin} alt=""></img>
+        </a>
+        <a
+          href="https://lmp-beep.github.io/PhotographyPortfolio/"
+          target="blank"
+        >
+          <img id="photo" src={camera} alt=""></img>
+        </a>
       </div>
     </div>
   );
