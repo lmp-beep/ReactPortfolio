@@ -211,8 +211,9 @@ html {
 .grid figure h2 {
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
+  word-wrap: break-word
 }
 
 figure.effect-bubba:hover img {
