@@ -1,7 +1,7 @@
 import React from "react";
 
-// import Banner from "../images/";
-// import Monitor from "../images/";
+import bookSearchBanner from "../images/bookSearchBanner.jpg";
+import bookSearchMonitor from "../images/bookSearchMonitor.jpg";
 // import Screenshot from "../images/";
 
 import arrowLeft from "../images/chevron-left.svg";
@@ -12,28 +12,28 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
-function PortfolioTemplate() {
+function PortfolioBookSearch() {
   return (
     <div>
       <Navbar className="portfolio-sidenav">
         <Nav>
-          {/* <Nav.Link as={Link} to="/portfolioVA"> */}
+          <Nav.Link as={Link} to="/portfolioNewsFlash">
             <img
               src={arrowRight}
               className="port-sidenav"
               id="right-arrow"
               alt=""
             />
-          {/* </Nav.Link> */}
+          </Nav.Link>
 
-          {/* <Nav.Link as={Link} to="/portfolioVA"> */}
+          <Nav.Link as={Link} to="/portfolioMyPhotos">
             <img
               src={arrowLeft}
               className="port-sidenav"
               id="left-arrow"
               alt=""
             />
-          {/* </Nav.Link> */}
+          </Nav.Link>
 
           <Nav.Link as={Link} to="/home">
             <img src={grid} className="port-sidenav" id="grid" alt="" />
@@ -43,7 +43,7 @@ function PortfolioTemplate() {
 
       <div className="body-info">
         <div>
-          {/* <img src={Banner} className="header-image" alt="" /> */}
+          <img src={bookSearchBanner} className="header-image" alt="" />
         </div>
 
         <div class="visit-btns">
@@ -83,7 +83,7 @@ function PortfolioTemplate() {
         <br></br>
 
         <div>
-          {/* <img src={Monitor} className="image-monitor" alt="" /> */}
+          <img src={bookSearchMonitor} className="image-monitor" alt="" />
         </div>
 
         <br></br>
@@ -97,4 +97,4 @@ function PortfolioTemplate() {
   );
 }
 
-export default PortfolioTemplate;
+export default PortfolioBookSearch;

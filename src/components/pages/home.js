@@ -6,6 +6,7 @@ import camera from "../images/photo-camera1.png";
 
 import newsFlashThumb from "../images/newsFlash.jpg";
 import vaBackThumb from "../images/vaBack.jpg";
+import myPhotos from "../images/myPhotos.jpg";
 import placeholderThumb from "../images/placeholder.jpg";
 
 function Portfolio() {
@@ -32,8 +33,8 @@ function Portfolio() {
           </figure>
 
           <figure className="effect-bubba">
-            <img src={placeholderThumb} className="thumbnail" alt="" />
-            <a href="">
+            <img src={myPhotos} className="thumbnail" alt="" />
+            <a href="#portfolioMyPhotos">
               <figcaption>
                 <h2>LISA PESSIN PHOTOGRAPHY</h2>
               </figcaption>
@@ -42,7 +43,7 @@ function Portfolio() {
 
           <figure className="effect-bubba">
             <img src={placeholderThumb} className="thumbnail" alt="" />
-            <a href="">
+            <a href="#portfolioBookSearch">
               <figcaption>
                 <h2>BOOK SEARCH</h2>
               </figcaption>

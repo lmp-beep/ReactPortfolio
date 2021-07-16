@@ -25,7 +25,7 @@ function PortfolioNewsFlash() {
             />
           </Nav.Link>
 
-          <Nav.Link as={Link} to="/portfolioVA">
+          <Nav.Link as={Link} to="/portfolioBookSearch">
             <img
               src={arrowLeft}
               className="port-sidenav"
