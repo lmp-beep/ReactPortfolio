@@ -16,6 +16,7 @@ const ContactForm = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -84,7 +85,13 @@ const ContactForm = () => {
                 name="user_email"
                 placeholder="name@example.com"
                 required
-                //   validators={['matchRegexp:/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/']}
+                // validators={[
+                //   "matchRegexp:/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/",
+                // ]}
+                // error={{
+                //   content: "Please enter a valid email address.",
+                //   pointing: "below",
+                // }}
               />
             </div>
 

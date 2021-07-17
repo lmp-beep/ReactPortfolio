@@ -1,7 +1,7 @@
 import React from "react";
 
-import bookSearchBanner from "../images/bookSearchBanner.jpg";
-import bookSearchMonitor from "../images/bookSearchMonitor.jpg";
+import placeholderBanner from "../images/portfolioPlaceholderBanner.jpg";
+import placeholderMonitor from "../images/portfolioPlaceholderMonitor.jpg";
 // import Screenshot from "../images/";
 
 import arrowLeft from "../images/chevron-left.svg";
@@ -12,7 +12,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
-function PortfolioBookSearch() {
+function portfolioPlaceholder() {
   return (
     <div>
       <Navbar className="portfolio-sidenav">
@@ -35,7 +35,7 @@ function PortfolioBookSearch() {
             />
           </Nav.Link>
 
-          <Nav.Link as={Link} to="/home">
+          <Nav.Link as={Link} to="/portfolio">
             <img src={grid} className="port-sidenav" id="grid" alt="" />
           </Nav.Link>
         </Nav>
@@ -43,7 +43,7 @@ function PortfolioBookSearch() {
 
       <div className="body-info">
         <div>
-          <img src={bookSearchBanner} className="header-image" alt="" />
+          <img src={placeholderBanner} className="header-image" alt="" />
         </div>
 
         <div class="visit-btns">
@@ -83,7 +83,7 @@ function PortfolioBookSearch() {
         <br></br>
 
         <div>
-          <img src={bookSearchMonitor} className="image-monitor" alt="" />
+          <img src={placeholderMonitor} className="image-monitor" alt="" />
         </div>
 
         <br></br>
@@ -97,4 +97,4 @@ function PortfolioBookSearch() {
   );
 }
 
-export default PortfolioBookSearch;
+export default portfolioPlaceholder;

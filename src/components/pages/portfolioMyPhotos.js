@@ -17,7 +17,7 @@ function PortfolioMyPhotos() {
     <div>
       <Navbar className="portfolio-sidenav">
         <Nav>
-          <Nav.Link as={Link} to="/portfolioBookSearch">
+          <Nav.Link as={Link} to="/portfolioPlaceholder">
             <img
               src={arrowRight}
               className="port-sidenav"
@@ -35,7 +35,7 @@ function PortfolioMyPhotos() {
             />
           </Nav.Link>
 
-          <Nav.Link as={Link} to="/home">
+          <Nav.Link as={Link} to="/postfolio">
             <img src={grid} className="port-sidenav" id="grid" alt="" />
           </Nav.Link>
         </Nav>

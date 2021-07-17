@@ -1,19 +1,35 @@
-import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useLocation,
+} from "react-router-dom";
 
-// import Splash from "./pages/splash";
+import Splash from "./pages/splash";
 import NavTabs from "./Navbar";
 // import Footer from "./Footer";
-import Home from "./pages/home";
+import Portfolio from "./pages/portfolio";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 
 import PortfolioNewsFlash from "./pages/portfolioNewsFlash";
 import PortfolioVA from "./pages/portfolioVA";
 import PortfolioMyPhotos from "./pages/portfolioMyPhotos";
-import PortfolioBookSearch from "./pages/portfolioBookSearch";
+import PortfolioPlaceholder from "./pages/portfolioPlaceholder";
 
-export default function App() {
+const App = () => {
+  const [showLandingPage, setShowLandingPage] = useState(false);
+  const { hash } = window.location;
+
+  useEffect(() => {
+    if (hash.length <= 2) {
+      setShowLandingPage(true);
+    } else {
+      setShowLandingPage(false);
+    }
+  });
+
   return (
     <Router>
       <div>
@@ -21,21 +37,21 @@ export default function App() {
         <div>
           <Switch>
             <Route exact path="/">
-              <Home />
+              {showLandingPage ? <Splash /> : <Portfolio />}
             </Route>
             <Route exact path="/portfolio">
-              <Home />
+              <Portfolio />
             </Route>
-            <Route exact path="/home">
+            {/* <Route exact path="/home">
               <Home />
-            </Route>
+            </Route> */}
             <Route exact path="/about">
               <About />
             </Route>
             <Route exact path="/contact">
               <Contact />
             </Route>
-            <Route exact path="/portfolioNewsFlash">
+            <Route exact path="/portfolio#portfolioNewsFlash">
               <PortfolioNewsFlash />
             </Route>
             <Route exact path="/portfolioVA">
@@ -44,8 +60,8 @@ export default function App() {
             <Route exact path="/portfolioMyPhotos">
               <PortfolioMyPhotos />
             </Route>
-            <Route exact path="/portfolioBookSearch">
-              <PortfolioBookSearch />
+            <Route exact path="/portfolioPlaceholder">
+              <PortfolioPlaceholder />
             </Route>
           </Switch>
         </div>
@@ -53,4 +69,5 @@ export default function App() {
       </div>
     </Router>
   );
-}
+};
+export default App;

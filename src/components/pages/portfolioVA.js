@@ -39,7 +39,7 @@ function PortfolioVA() {
             />
           </Nav.Link>
 
-          <Nav.Link as={Link} to="/home">
+          <Nav.Link as={Link} to="/portfolio">
             <img src={grid} className="port-sidenav" id="grid" alt="" />
           </Nav.Link>
         </Nav>
