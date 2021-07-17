@@ -16,7 +16,7 @@ function Portfolio() {
         <div className="row hide-portfolio">
           <figure className="effect-bubba">
             <img src={newsFlashThumb} className="thumbnail" alt="" />
-            <a href="portfolio#portfolioNewsFlash">
+            <a href="portfolioNewsFlash">
               <figcaption>
                 <h2>NEWS FLASH</h2>
               </figcaption>
@@ -25,7 +25,7 @@ function Portfolio() {
 
           <figure className="effect-bubba">
             <img src={vaBackThumb} className="thumbnail" alt="" />
-            <a href="#portfolioVA">
+            <a href="portfolioVA">
               <figcaption>
                 <h2>MEDICAL MEDIA SHAREPOINT</h2>
               </figcaption>
@@ -34,7 +34,7 @@ function Portfolio() {
 
           <figure className="effect-bubba">
             <img src={myPhotos} className="thumbnail" alt="" />
-            <a href="#portfolioMyPhotos">
+            <a href="portfolioMyPhotos">
               <figcaption>
                 <h2>LISA PESSIN PHOTOGRAPHY</h2>
               </figcaption>
@@ -43,7 +43,7 @@ function Portfolio() {
 
           <figure className="effect-bubba">
             <img src={placeholderThumb} className="thumbnail" alt="" />
-            <a href="#portfolioPlaceholder">
+            <a href="portfolioPlaceholder">
               <figcaption>
                 <h2>Portfolio Placeholder</h2>
               </figcaption>

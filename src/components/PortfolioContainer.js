@@ -51,7 +51,7 @@ const App = () => {
             <Route exact path="/contact">
               <Contact />
             </Route>
-            <Route exact path="/portfolio#portfolioNewsFlash">
+            <Route exact path="/portfolioNewsFlash">
               <PortfolioNewsFlash />
             </Route>
             <Route exact path="/portfolioVA">
