@@ -9,9 +9,9 @@ import vaHomeScreenshot from "../images/vaHomeScreenshot.jpg";
 import vaMapScreenshot from "../images/vaMapScreenshot.jpg";
 import vaPhotographyScreenshot from "../images/vaPhotographyScreenshot.jpg";
 
-import arrowLeft from "../images/chevron-left.svg";
-import arrowRight from "../images/chevron-right.svg";
-import grid from "../images/grid-3x3-gap-fill.svg";
+import arrowLeft from "../images/chevron-left.png";
+import arrowRight from "../images/chevron-right.png";
+import grid from "../images/grid-3x3-gap-fill.png";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";

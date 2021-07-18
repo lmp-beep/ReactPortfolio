@@ -5,9 +5,9 @@ import newsFlashBanner4 from "../images/newsFlashBanner4.jpg";
 import newsFlashMonitor from "../images/newsFlashMonitor.jpg";
 import newsFlashScreenshot from "../images/newsFlashScreenshot.jpg";
 
-import arrowLeft from "../images/chevron-left.svg";
-import arrowRight from "../images/chevron-right.svg";
-import grid from "../images/grid-3x3-gap-fill.svg";
+import arrowLeft from "../images/chevron-left.png";
+import arrowRight from "../images/chevron-right.png";
+import grid from "../images/grid-3x3-gap-fill.png";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -52,7 +52,7 @@ function PortfolioNewsFlash() {
             />
           </Nav.Link>
 
-          <Nav.Link as={Link} to="/portfolioPlaceholder">
+          <Nav.Link as={Link} to="/portfolioMyPhotos">
             <img
               src={arrowLeft}
               className="port-sidenav"

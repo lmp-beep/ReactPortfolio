@@ -5,9 +5,9 @@ import myPhotosBanner from "../images/myPhotosBanner.jpg";
 import myPhotosMonitor from "../images/myPhotosMonitor.jpg";
 // import Screenshot from "../images/";
 
-import arrowLeft from "../images/chevron-left.svg";
-import arrowRight from "../images/chevron-right.svg";
-import grid from "../images/grid-3x3-gap-fill.svg";
+import arrowLeft from "../images/chevron-left.png";
+import arrowRight from "../images/chevron-right.png";
+import grid from "../images/grid-3x3-gap-fill.png";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -43,7 +43,7 @@ function PortfolioMyPhotos() {
 
       <Navbar className="portfolio-sidenav">
         <Nav>
-          <Nav.Link as={Link} to="/portfolioPlaceholder">
+          <Nav.Link as={Link} to="/portfolioNewsFlash">
             <img
               src={arrowRight}
               className="port-sidenav"

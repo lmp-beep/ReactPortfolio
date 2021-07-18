@@ -9,9 +9,9 @@ import arrowLeft from "../images/chevron-left.svg";
 import arrowRight from "../images/chevron-right.svg";
 import grid from "../images/grid-3x3-gap-fill.svg";
 
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import { Link } from "react-router-dom";
+import arrowLeft from "../images/chevron-left.png";
+import arrowRight from "../images/chevron-right.png";
+import grid from "../images/grid-3x3-gap-fill.png";
 
 function PortfolioTemplate() {
   return (
