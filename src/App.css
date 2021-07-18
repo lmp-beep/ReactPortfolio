@@ -429,6 +429,10 @@ a#bootcamp:hover {
   background-color: #ee028d;
 }
 
+a.title {
+  color: white;
+}
+
 .form-group {
   color: white;
   font-family: "Raleway", sans-serif;

@@ -96,7 +96,7 @@ const ContactForm = () => {
 
           <Form onSubmit={handleFormSubmit}>
             <div className="form-group">
-              <a>Name</a>
+              <a className="title">Name</a>
               <Form.Field
                 id="form-input-control-last-name"
                 control={Input}
@@ -106,7 +106,7 @@ const ContactForm = () => {
             </div>
 
             <div className="form-group">
-              <a>Email</a>
+              <a className="title">Email</a>
               <Form.Field
                 id="form-input-control-email"
                 control={Input}
@@ -124,7 +124,7 @@ const ContactForm = () => {
             </div>
 
             <div className="form-group">
-              <a>Message</a>
+              <a className="title">Message</a>
               <Form.Field
                 id="form-textarea-control-opinion"
                 control={TextArea}
