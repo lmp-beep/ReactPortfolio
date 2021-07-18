@@ -2,7 +2,6 @@ import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Splash from "./pages/splash";
-// import NavTabs from "./Navbar";
 // import Footer from "./Footer";
 import Portfolio from "./pages/portfolio";
 import About from "./pages/about";
@@ -14,56 +13,35 @@ import PortfolioMyPhotos from "./pages/portfolioMyPhotos";
 import PortfolioPlaceholder from "./pages/portfolioPlaceholder";
 
 const App = () => {
-  // const [showLandingPage, setShowLandingPage] = useState(false);
-  // const { hash } = window.location;
-
-  // useEffect(() => {
-  //   if (hash.length <= 2) {
-  //     setShowLandingPage(true);
-  //   } else {
-  //     setShowLandingPage(false);
-  //   }
-  // });
-
   return (
     <Router>
       <div>
-        {/* <NavTabs /> */}
-        <div>
-          <Switch>
-            {/* <Route exact path="ReactPortfolio/">
-              {showLandingPage ? <Splash /> : <Portfolio />}
-            </Route> */}
-            <Route exact path="/">
-              <Splash />
-            </Route>
-            <Route exact path="/portfolio">
-              <Portfolio />
-            </Route>
-            {/* <Route exact path="/home">
-              <Home />
-            </Route> */}
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
-            <Route exact path="/portfolioNewsFlash">
-              <PortfolioNewsFlash />
-            </Route>
-            <Route exact path="/portfolioVA">
-              <PortfolioVA />
-            </Route>
-            <Route exact path="/portfolioMyPhotos">
-              <PortfolioMyPhotos />
-            </Route>
-            <Route exact path="/portfolioPlaceholder">
-              <PortfolioPlaceholder />
-            </Route>
-          </Switch>
-        </div>
-        {/* <Footer /> */}
+        <Switch>
+          <Route exact path="/">
+            <Splash />
+          </Route>
+          <Route exact path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/portfolioNewsFlash">
+            <PortfolioNewsFlash />
+          </Route>
+          <Route exact path="/portfolioVA">
+            <PortfolioVA />
+          </Route>
+          <Route exact path="/portfolioMyPhotos">
+            <PortfolioMyPhotos />
+          </Route>
+          <Route exact path="/portfolioPlaceholder">
+            <PortfolioPlaceholder />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
