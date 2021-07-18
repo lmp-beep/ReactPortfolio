@@ -74,7 +74,7 @@ a#enter:hover {
   text-decoration: none;
 }
 
-h2#enter {
+h2.enter {
   text-decoration: none;
   margin-top: 30%;
   margin-left: 80%;

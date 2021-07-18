@@ -23,8 +23,8 @@ function Splash() {
     <div className="container">
       <img src={logoFull} id="logo-full" className="logo-full" alt="" />
 
-      <h2 id="enter">
-      <Link to="/portfolio">ENTER</Link>
+      <h2 className="enter">
+      <Link id="enter" to="/portfolio">ENTER</Link>
       </h2>
 
       <h1 className="shadow">LP</h1>
