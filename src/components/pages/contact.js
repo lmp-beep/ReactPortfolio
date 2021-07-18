@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 import emailjs from "emailjs-com";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import swal from "sweetalert2";
+
+import logo from "../images/LPlogo.png";
 import github from "../images/github-logo1.png";
 import linkedin from "../images/linkedin-logo1.png";
 import camera from "../images/photo-camera1.png";
@@ -16,7 +21,7 @@ const ContactForm = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    
+
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -43,6 +48,29 @@ const ContactForm = () => {
 
   return (
     <div>
+      <header className="App-header">
+        <Link to="/">
+          <img src={logo} className="App-logo" alt="logo" />
+        </Link>
+        <Navbar>
+          <Nav className="navbar">
+            <Nav.Link
+              className="navbar"
+              id="portfolio"
+              as={Link}
+              to="/portfolio"
+            >
+              PORTFOLIO
+            </Nav.Link>
+            <Nav.Link className="navbar" id="about" as={Link} to="/about">
+              ABOUT
+            </Nav.Link>
+            <Nav.Link className="navbar" id="contact" as={Link} to="/contact">
+              CONTACT
+            </Nav.Link>
+          </Nav>
+        </Navbar>
+      </header>
       <div className="sidenav-contact">
         <a href="https://github.com/lmp-beep" target="blank">
           <img id="github" src={github} alt=""></img>

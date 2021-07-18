@@ -1,5 +1,6 @@
 import React from "react";
 
+import logo from "../images/LPlogo.png";
 // import Banner from "../images/";
 // import Monitor from "../images/";
 // import Screenshot from "../images/";
@@ -15,24 +16,49 @@ import { Link } from "react-router-dom";
 function PortfolioTemplate() {
   return (
     <div>
+      <header className="App-header">
+        <Link to="/">
+          <img src={logo} className="App-logo" alt="logo" />
+        </Link>
+
+        <Navbar>
+          <Nav className="navbar">
+            <Nav.Link
+              className="navbar"
+              id="portfolio"
+              as={Link}
+              to="/portfolio"
+            >
+              PORTFOLIO
+            </Nav.Link>
+            <Nav.Link className="navbar" id="about" as={Link} to="/about">
+              ABOUT
+            </Nav.Link>
+            <Nav.Link className="navbar" id="contact" as={Link} to="/contact">
+              CONTACT
+            </Nav.Link>
+          </Nav>
+        </Navbar>
+      </header>
+
       <Navbar className="portfolio-sidenav">
         <Nav>
           {/* <Nav.Link as={Link} to="/portfolioVA"> */}
-            <img
-              src={arrowRight}
-              className="port-sidenav"
-              id="right-arrow"
-              alt=""
-            />
+          <img
+            src={arrowRight}
+            className="port-sidenav"
+            id="right-arrow"
+            alt=""
+          />
           {/* </Nav.Link> */}
 
           {/* <Nav.Link as={Link} to="/portfolioVA"> */}
-            <img
-              src={arrowLeft}
-              className="port-sidenav"
-              id="left-arrow"
-              alt=""
-            />
+          <img
+            src={arrowLeft}
+            className="port-sidenav"
+            id="left-arrow"
+            alt=""
+          />
           {/* </Nav.Link> */}
 
           <Nav.Link as={Link} to="/portfolio">
@@ -42,16 +68,14 @@ function PortfolioTemplate() {
       </Navbar>
 
       <div className="body-info">
-        <div>
-          {/* <img src={Banner} className="header-image" alt="" /> */}
-        </div>
+        <div>{/* <img src={Banner} className="header-image" alt="" /> */}</div>
 
-        <div class="visit-btns">
+        <div className="visit-btns">
           <a
             // href=""
             target="blank"
           >
-            <button class="visit-button" id="visit-website">
+            <button className="visit-button" id="visit-website">
               VISIT WEBSITE
             </button>
           </a>
@@ -61,7 +85,7 @@ function PortfolioTemplate() {
             // href=""
             target="blank"
           >
-            <button class="visit-button" id="visit-github">
+            <button className="visit-button" id="visit-github">
               VISIT GITHUB REPO
             </button>
           </a>
@@ -70,13 +94,9 @@ function PortfolioTemplate() {
         <br></br>
 
         <div className="description">
-          <p>
-            Description
-          </p>
+          <p>Description</p>
 
-          <p className="description">
-            Technologies Used: 
-          </p>
+          <p className="description">Technologies Used:</p>
         </div>
 
         <br></br>

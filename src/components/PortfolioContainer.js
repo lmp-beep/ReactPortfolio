@@ -1,13 +1,8 @@
-import React, { useEffect, useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-} from "react-router-dom";
+import React from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Splash from "./pages/splash";
-import NavTabs from "./Navbar";
+// import NavTabs from "./Navbar";
 // import Footer from "./Footer";
 import Portfolio from "./pages/portfolio";
 import About from "./pages/about";
@@ -19,25 +14,28 @@ import PortfolioMyPhotos from "./pages/portfolioMyPhotos";
 import PortfolioPlaceholder from "./pages/portfolioPlaceholder";
 
 const App = () => {
-  const [showLandingPage, setShowLandingPage] = useState(false);
-  const { hash } = window.location;
+  // const [showLandingPage, setShowLandingPage] = useState(false);
+  // const { hash } = window.location;
 
-  useEffect(() => {
-    if (hash.length <= 2) {
-      setShowLandingPage(true);
-    } else {
-      setShowLandingPage(false);
-    }
-  });
+  // useEffect(() => {
+  //   if (hash.length <= 2) {
+  //     setShowLandingPage(true);
+  //   } else {
+  //     setShowLandingPage(false);
+  //   }
+  // });
 
   return (
     <Router>
       <div>
-        <NavTabs />
+        {/* <NavTabs /> */}
         <div>
           <Switch>
-            <Route exact path="/">
+            {/* <Route exact path="ReactPortfolio/">
               {showLandingPage ? <Splash /> : <Portfolio />}
+            </Route> */}
+            <Route exact path="/">
+              <Splash />
             </Route>
             <Route exact path="/portfolio">
               <Portfolio />

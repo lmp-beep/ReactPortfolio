@@ -1,5 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
+import logo from "../images/LPlogo.png";
 import github from "../images/github-logo1.png";
 import linkedin from "../images/linkedin-logo1.png";
 import camera from "../images/photo-camera1.png";
@@ -12,11 +16,36 @@ import placeholderThumb from "../images/placeholder.jpg";
 function Portfolio() {
   return (
     <div className="App">
+      <header className="App-header">
+        <Link to="/">
+          <img src={logo} className="App-logo" alt="logo" />
+        </Link>
+
+        <Navbar>
+          <Nav className="navbar">
+            <Nav.Link
+              className="navbar"
+              id="portfolio"
+              as={Link}
+              to="/portfolio"
+            >
+              PORTFOLIO
+            </Nav.Link>
+            <Nav.Link className="navbar" id="about" as={Link} to="/about">
+              ABOUT
+            </Nav.Link>
+            <Nav.Link className="navbar" id="contact" as={Link} to="/contact">
+              CONTACT
+            </Nav.Link>
+          </Nav>
+        </Navbar>
+      </header>
+
       <div className="grid">
         <div className="row hide-portfolio">
           <figure className="effect-bubba">
             <img src={newsFlashThumb} className="thumbnail" alt="" />
-            <a href="portfolioNewsFlash">
+            <a href="#portfolioNewsFlash">
               <figcaption>
                 <h2>NEWS FLASH</h2>
               </figcaption>
@@ -25,27 +54,39 @@ function Portfolio() {
 
           <figure className="effect-bubba">
             <img src={vaBackThumb} className="thumbnail" alt="" />
-            <a href="portfolioVA">
+            <a href="#portfolioVA">
               <figcaption>
-                <h2>MEDICAL MEDIA SHAREPOINT</h2>
+                <h2>
+                  MEDICAL MEDIA
+                  <br />
+                  SHAREPOINT
+                </h2>
               </figcaption>
             </a>
           </figure>
 
           <figure className="effect-bubba">
             <img src={myPhotos} className="thumbnail" alt="" />
-            <a href="portfolioMyPhotos">
+            <a href="#portfolioMyPhotos">
               <figcaption>
-                <h2>LISA PESSIN PHOTOGRAPHY</h2>
+                <h2>
+                  LISA PESSIN
+                  <br />
+                  PHOTOGRAPHY
+                </h2>
               </figcaption>
             </a>
           </figure>
 
           <figure className="effect-bubba">
             <img src={placeholderThumb} className="thumbnail" alt="" />
-            <a href="portfolioPlaceholder">
+            <a href="#portfolio">
               <figcaption>
-                <h2>Portfolio Placeholder</h2>
+                <h2>
+                  Your Next
+                  <br />
+                  Project
+                </h2>
               </figcaption>
             </a>
           </figure>

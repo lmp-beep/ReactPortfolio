@@ -1,5 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
+import logo from "../images/LPlogo.png";
 import frame from "../images/frame.png";
 import github from "../images/github-logo1.png";
 import linkedin from "../images/linkedin-logo1.png";
@@ -8,6 +12,29 @@ import camera from "../images/photo-camera1.png";
 function About() {
   return (
     <div className="">
+      <header className="App-header">
+        <Link to="/">
+          <img src={logo} className="App-logo" alt="logo" />
+        </Link>
+        <Navbar>
+          <Nav className="navbar">
+            <Nav.Link
+              className="navbar"
+              id="portfolio"
+              as={Link}
+              to="/portfolio"
+            >
+              PORTFOLIO
+            </Nav.Link>
+            <Nav.Link className="navbar" id="about" as={Link} to="/about">
+              ABOUT
+            </Nav.Link>
+            <Nav.Link className="navbar" id="contact" as={Link} to="/contact">
+              CONTACT
+            </Nav.Link>
+          </Nav>
+        </Navbar>
+      </header>
       <div className="about">
         <div className="about-me col-sm" id="bio">
           <p className="bio">

@@ -1,3 +1,88 @@
+/* ---------------------SPLASH----------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.shadow {
+  --x-shadow: 0;
+  --y-shadow: 0;
+  --x: 50%;
+  --y: 50%;
+  font-size: 15rem;
+  transform: translateY(0%);
+  transition: all 0.2s ease;
+  position: absolute;
+  padding: 5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50vw;
+  font-weight: 900;
+  margin-top: 0;
+  background-color: #cac8c8;
+  color: transparent;
+  text-shadow: 5px 2px 10px rgba(255, 255, 255, 0.8);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  z-index: 1;
+}
+
+.shadow:hover {
+  transition: all 0.1s ease;
+  text-shadow: var(--x-shadow) var(--y-shadow) 8px rgba(255, 255, 255, 0.8);
+}
+
+.shadow p {
+  max-height: 100vh;
+}
+
+h1.shadow {
+  box-shadow: none !important;
+  margin-top: 0;
+  z-index: 1;
+  transform: translateY(-5%);
+}
+
+.container {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 100%;
+}
+
+#logo-full {
+  display: block;
+  margin-left: 19%;
+  margin-right: auto;
+  width: 50%;
+  z-index: 3;
+  position: absolute;
+  transform: translateY(140%);
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  text-decoration: none !important;
+  color: #000 !important;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #ee028d !important;
+  text-decoration: none;
+}
+
+h2#enter {
+  text-decoration: none;
+  margin-top: 30%;
+  margin-left: 80%;
+  position: absolute;
+  z-index: 10;
+}
+
+/* ---------------------MAIN----------------------------- */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -17,8 +102,12 @@ html {
 }
 
 .App-logo {
-  width: 30%;
-  margin-left: 10%;
+  width: 70%;
+  margin-left: 25%;
+}
+
+a {
+  width: 50%;
 }
 
 .App-header {
@@ -30,12 +119,13 @@ html {
 #portfolio.nav-link,
 #about.nav-link,
 #contact.nav-link {
-  text-decoration: none;
-  color: #5d5c5d;
+  font-weight: 100;
+  text-decoration: none !important;
+  color: #5d5c5d !important;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   letter-spacing: 10px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   padding-top: 20px;
   display: block;
 }
@@ -213,7 +303,7 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-weight: 700;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
 figure.effect-bubba:hover img {
@@ -269,12 +359,18 @@ figure.effect-bubba:hover h2 {
   transform: translate3d(0, 0, 0);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 860px) {
   .grid {
     padding: 1em 0 1em 7em;
   }
   .grid figure h2 {
-    font-size: 24px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid figure h2 {
+    font-size: 30px;
   }
 }
 
@@ -615,7 +711,6 @@ figure.effect-bubba:hover h2 {
 }
 
 .port-sidenav {
-  
   text-decoration: none;
   /* font-size: 25px; */
   color: #818181;

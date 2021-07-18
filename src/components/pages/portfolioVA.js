@@ -1,5 +1,6 @@
 import React from "react";
 
+import logo from "../images/LPlogo.png";
 import vaBanner from "../images/vaBanner.jpg";
 import vaMonitor from "../images/vaMonitor.jpg";
 import vaClinicsScreenshot from "../images/vaClinicsScreenshot.jpg";
@@ -19,6 +20,31 @@ import { Link } from "react-router-dom";
 function PortfolioVA() {
   return (
     <div>
+      <header className="App-header">
+        <Link to="/">
+          <img src={logo} className="App-logo" alt="logo" />
+        </Link>
+
+        <Navbar>
+          <Nav className="navbar">
+            <Nav.Link
+              className="navbar"
+              id="portfolio"
+              as={Link}
+              to="/portfolio"
+            >
+              PORTFOLIO
+            </Nav.Link>
+            <Nav.Link className="navbar" id="about" as={Link} to="/about">
+              ABOUT
+            </Nav.Link>
+            <Nav.Link className="navbar" id="contact" as={Link} to="/contact">
+              CONTACT
+            </Nav.Link>
+          </Nav>
+        </Navbar>
+      </header>
+
       <Navbar className="portfolio-sidenav">
         <Nav>
           <Nav.Link as={Link} to="/portfolioMyPhotos">

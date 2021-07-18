@@ -1,8 +1,10 @@
 import React from "react";
 
+import logo from "../images/LPlogo.png";
 import newsFlashBanner4 from "../images/newsFlashBanner4.jpg";
 import newsFlashMonitor from "../images/newsFlashMonitor.jpg";
 import newsFlashScreenshot from "../images/newsFlashScreenshot.jpg";
+
 import arrowLeft from "../images/chevron-left.svg";
 import arrowRight from "../images/chevron-right.svg";
 import grid from "../images/grid-3x3-gap-fill.svg";
@@ -14,6 +16,31 @@ import { Link } from "react-router-dom";
 function PortfolioNewsFlash() {
   return (
     <div>
+      <header className="App-header">
+        <Link to="/">
+          <img src={logo} className="App-logo" alt="logo" />
+        </Link>
+
+        <Navbar>
+          <Nav className="navbar">
+            <Nav.Link
+              className="navbar"
+              id="portfolio"
+              as={Link}
+              to="/portfolio"
+            >
+              PORTFOLIO
+            </Nav.Link>
+            <Nav.Link className="navbar" id="about" as={Link} to="/about">
+              ABOUT
+            </Nav.Link>
+            <Nav.Link className="navbar" id="contact" as={Link} to="/contact">
+              CONTACT
+            </Nav.Link>
+          </Nav>
+        </Navbar>
+      </header>
+
       <Navbar className="portfolio-sidenav">
         <Nav>
           <Nav.Link as={Link} to="/portfolioVA">
@@ -45,12 +72,12 @@ function PortfolioNewsFlash() {
           <img src={newsFlashBanner4} className="header-image" alt="" />
         </div>
 
-        <div class="visit-btns">
+        <div className="visit-btns">
           <a
             href="https://lmp-beep.github.io/07-Project1-MyNews/"
             target="blank"
           >
-            <button class="visit-button" id="visit-website">
+            <button className="visit-button" id="visit-website">
               VISIT WEBSITE
             </button>
           </a>
@@ -60,7 +87,7 @@ function PortfolioNewsFlash() {
             href="https://github.com/lmp-beep/07-Project1-MyNews"
             target="blank"
           >
-            <button class="visit-button" id="visit-github">
+            <button className="visit-button" id="visit-github">
               VISIT GITHUB REPO
             </button>
           </a>
