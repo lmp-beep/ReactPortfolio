@@ -15,7 +15,5 @@ Deployed Site => https://lmp-beep.github.io/ReactPortfolio/
 ## To do list:  
 >* Fix favicon
 >* Add validation to contact form
->* Fix side navigation opacity
->* Add splash page
->* Add each portfolio page
+>* Fix side nav opacity
 >* Add photo of me to about page

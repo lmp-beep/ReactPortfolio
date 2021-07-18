@@ -46,7 +46,7 @@ function About() {
           </p>
           <p className="bio">
             I received my certificate in full-stack web development from the{" "}
-            <a target="blank" href="https://bootcamp.pe.gatech.edu/coding/">
+            <a target="blank" id="bootcamp" href="https://bootcamp.pe.gatech.edu/coding/">
               Georgia Tech Coding Bootcamp
             </a>{" "}
             in July 2021. I am new to the web world, but I love creating

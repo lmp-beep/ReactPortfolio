@@ -61,7 +61,7 @@ h1.shadow {
   transform: translateY(140%);
 }
 
-a {
+a#enter {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   text-decoration: none !important;
@@ -69,7 +69,7 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+a#enter:hover {
   color: #ee028d !important;
   text-decoration: none;
 }
@@ -389,6 +389,14 @@ figure.effect-bubba:hover h2 {
   margin-left: 13%;
   margin-top: 5%;
   margin-right: 5%;
+}
+
+a#bootcamp {
+  color: black;
+}
+
+a#bootcamp:hover {
+  color: #ee028d;
 }
 
 @media screen and (max-width: 767px) {
