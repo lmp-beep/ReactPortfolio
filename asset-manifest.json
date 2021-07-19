@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ReactPortfolio/static/css/main.97c3c43e.chunk.css",
-    "main.js": "/ReactPortfolio/static/js/main.8c07161c.chunk.js",
-    "main.js.map": "/ReactPortfolio/static/js/main.8c07161c.chunk.js.map",
+    "main.js": "/ReactPortfolio/static/js/main.d0ca1d20.chunk.js",
+    "main.js.map": "/ReactPortfolio/static/js/main.d0ca1d20.chunk.js.map",
     "runtime-main.js": "/ReactPortfolio/static/js/runtime-main.38dcf064.js",
     "runtime-main.js.map": "/ReactPortfolio/static/js/runtime-main.38dcf064.js.map",
     "static/js/2.f41f36f3.chunk.js": "/ReactPortfolio/static/js/2.f41f36f3.chunk.js",
@@ -12,10 +12,11 @@
     "static/js/2.f41f36f3.chunk.js.LICENSE.txt": "/ReactPortfolio/static/js/2.f41f36f3.chunk.js.LICENSE.txt",
     "static/media/LPlogo.721abe76.png": "/ReactPortfolio/static/media/LPlogo.721abe76.png",
     "static/media/LPlogoFull.329cd260.png": "/ReactPortfolio/static/media/LPlogoFull.329cd260.png",
-    "static/media/frame.a9654ecf.png": "/ReactPortfolio/static/media/frame.a9654ecf.png",
-    "static/media/myPhotos.4d3bcd91.jpg": "/ReactPortfolio/static/media/myPhotos.4d3bcd91.jpg",
-    "static/media/myPhotosBanner.2f7e031e.jpg": "/ReactPortfolio/static/media/myPhotosBanner.2f7e031e.jpg",
-    "static/media/myPhotosMonitor.d725cfe2.jpg": "/ReactPortfolio/static/media/myPhotosMonitor.d725cfe2.jpg",
+    "static/media/frame.734a9990.png": "/ReactPortfolio/static/media/frame.734a9990.png",
+    "static/media/myPhotos.755f0f39.jpg": "/ReactPortfolio/static/media/myPhotos.755f0f39.jpg",
+    "static/media/myPhotosBanner.9d8fdffc.jpg": "/ReactPortfolio/static/media/myPhotosBanner.9d8fdffc.jpg",
+    "static/media/myPhotosMonitor.0ce4e4ed.jpg": "/ReactPortfolio/static/media/myPhotosMonitor.0ce4e4ed.jpg",
+    "static/media/myPhotosScreenshot.c00a1b0b.jpg": "/ReactPortfolio/static/media/myPhotosScreenshot.c00a1b0b.jpg",
     "static/media/newsFlash.37c80f27.jpg": "/ReactPortfolio/static/media/newsFlash.37c80f27.jpg",
     "static/media/newsFlashBanner4.1ceaa1c5.jpg": "/ReactPortfolio/static/media/newsFlashBanner4.1ceaa1c5.jpg",
     "static/media/newsFlashMonitor.a10030e5.jpg": "/ReactPortfolio/static/media/newsFlashMonitor.a10030e5.jpg",
@@ -36,6 +37,6 @@
     "static/js/runtime-main.38dcf064.js",
     "static/js/2.f41f36f3.chunk.js",
     "static/css/main.97c3c43e.chunk.css",
-    "static/js/main.8c07161c.chunk.js"
+    "static/js/main.d0ca1d20.chunk.js"
   ]
 }
