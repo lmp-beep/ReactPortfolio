@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../images/LPlogo.png";
 import myPhotosBanner from "../images/myPhotosBanner.jpg";
 import myPhotosMonitor from "../images/myPhotosMonitor.jpg";
-// import Screenshot from "../images/";
+import Screenshot from "../images/myPhotosScreenshot.jpg";
 
 import arrowLeft from "../images/chevron-left.png";
 import arrowRight from "../images/chevron-right.png";
@@ -96,9 +96,9 @@ function PortfolioMyPhotos() {
         <br></br>
 
         <div className="description">
-          <p>Description</p>
+          <p>This website is my portfolio of my personal photography work. It includes photos of animals at several zoos and aquariums, as well as architecture and nature at various sites throughout the United States and Canada. My sports photos are a collection of work I created while volunteering with Blaze Sports and The Special Olympics.</p>
 
-          <p className="description">Technologies Used:</p>
+          <p className="description">Technologies Used: HTML & CSS</p>
         </div>
 
         <br></br>
@@ -112,7 +112,7 @@ function PortfolioMyPhotos() {
         <br></br>
 
         <div>
-          {/* <img src={Screenshot} className="image-screenshot" alt="" /> */}
+          <img src={Screenshot} className="image-screenshot" alt="" />
         </div>
       </div>
     </div>
