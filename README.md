@@ -17,3 +17,12 @@ Deployed Site => https://lmp-beep.github.io/ReactPortfolio/
 >* Add validation to contact form
 >* Fix side nav opacity
 >* Add photo of me to about page
+
+## Add Projects:
+>* Weather Dashboard
+>* Tech Blog
+>* Fitness Tracker
+>* Book Search Engine
+>* Redux Store
+>* Murdering Green
+
