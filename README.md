@@ -16,10 +16,11 @@ Deployed Site => https://lmp-beep.github.io/ReactPortfolio/
 >* Fix favicon
 >* Add validation to contact form
 >* Fix side nav opacity
->* Add photo of me to about page
+>* Fix mobile sizing
 
 ## Add Projects:
 >* Weather Dashboard
+>* Note Taker
 >* Tech Blog
 >* Fitness Tracker
 >* Book Search Engine
