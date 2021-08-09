@@ -1,9 +1,11 @@
 import React from "react";
 
 import logo from "../images/LPlogo.png";
-import newsFlashBanner4 from "../images/newsFlashBanner4.jpg";
-import newsFlashMonitor from "../images/newsFlashMonitor.jpg";
-import newsFlashScreenshot from "../images/newsFlashScreenshot.jpg";
+import fitnessTrackerBanner from "../images/fitnessTrackerBanner.jpg";
+import fitnessTrackerMonitor from "../images/fitnessTrackerMonitor.jpg";
+import Screenshot1 from "../images/fitnessTrackerScreenshot1.jpg";
+import Screenshot2 from "../images/fitnessTrackerScreenshot2.jpg";
+import Screenshot3 from "../images/fitnessTrackerScreenshot3.jpg";
 
 import arrowLeft from "../images/chevron-left.png";
 import arrowRight from "../images/chevron-right.png";
@@ -13,7 +15,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
-function PortfolioNewsFlash() {
+function portfolioFitnessTracker() {
   return (
     <div>
       <header className="App-header">
@@ -43,7 +45,7 @@ function PortfolioNewsFlash() {
 
       <Navbar className="portfolio-sidenav">
         <Nav>
-          <Nav.Link as={Link} to="/portfolioVA">
+          <Nav.Link as={Link} to="/portfolioNewsFlash">
             <img
               src={arrowRight}
               className="port-sidenav"
@@ -52,7 +54,7 @@ function PortfolioNewsFlash() {
             />
           </Nav.Link>
 
-          <Nav.Link as={Link} to="/portfolioFitnessTracker">
+          <Nav.Link as={Link} to="/portfolioMyPhotos">
             <img
               src={arrowLeft}
               className="port-sidenav"
@@ -69,12 +71,12 @@ function PortfolioNewsFlash() {
 
       <div className="body-info">
         <div>
-          <img src={newsFlashBanner4} className="header-image" alt="" />
+          <img src={fitnessTrackerBanner} className="header-image" alt="" />
         </div>
 
         <div className="visit-btns">
           <a
-            href="https://lmp-beep.github.io/07-Project1-MyNews/"
+            href="https://lmp-fitness-tracker.herokuapp.com/"
             target="blank"
           >
             <button className="visit-button" id="visit-website">
@@ -84,7 +86,7 @@ function PortfolioNewsFlash() {
           <br></br>
           <br></br>
           <a
-            href="https://github.com/lmp-beep/07-Project1-MyNews"
+            href="https://github.com/lmp-beep/18-FitnessTracker"
             target="blank"
           >
             <button className="visit-button" id="visit-github">
@@ -96,40 +98,35 @@ function PortfolioNewsFlash() {
         <br></br>
 
         <div className="description">
-          <p>
-            News Flash is a news aggregator that uses Javascript Fetch to
-            Request current news stories from the New York Times public API. The
-            JSON Response is then extracted to provide the user with a photo,
-            headline and abstract of each story. If the user clicks on the story
-            card, they are taken to the full story at the News York Times
-            website. The user can choose to read stories from US News, World
-            News, Sports, Travel and Health. A carousel of the dominant story
-            from each category is at the top of the page, while several smaller
-            cards of other news stories fill the rest of the page.
-          </p>
+          <p>This Fitness Tracker App uses Express, Mongoose and MongoDB Atlas to create and track daily workouts. The user can enter weight, sets, reps and duration for resistance exercises, and enter distance and duration for cardio exercises. The user can then access the combined weight of multiple exercises, and the total duration of each workout, for the past seven days in convenient charts on the Dashboard page.</p>
 
-          <p className="description">
-            Technologies Used: HTML, CSS, Bootstrap, Javascript, JQuery, Fetch,
-            API/JSON
-          </p>
+          <p className="description">Technologies Used: Express, MongoDB, Atlas, Mongoose, Node, HTML, CSS, JavaScript, Heroku </p>
         </div>
 
         <br></br>
         <br></br>
 
         <div>
-          <img src={newsFlashMonitor} className="image-monitor" alt="" />
+          <img src={fitnessTrackerMonitor} className="image-monitor" alt="" />
         </div>
 
         <br></br>
         <br></br>
 
         <div>
-          <img src={newsFlashScreenshot} className="image-screenshot" alt="" />
+          <img src={Screenshot1} className="image-screenshot" alt="" />
+          <br></br>
+          <br></br>
+          <img src={Screenshot2} className="image-screenshot" alt="" />
+          <br></br>
+          <br></br>
+          <img src={Screenshot3} className="image-screenshot" alt="" />
+          <br></br>
+          <br></br>
         </div>
       </div>
     </div>
   );
 }
 
-export default PortfolioNewsFlash;
+export default portfolioFitnessTracker;

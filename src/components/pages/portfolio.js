@@ -11,7 +11,8 @@ import camera from "../images/photo-camera1.png";
 import newsFlashThumb from "../images/newsFlash.jpg";
 import vaBackThumb from "../images/vaBack.jpg";
 import myPhotos from "../images/myPhotos.jpg";
-import placeholderThumb from "../images/placeholder.jpg";
+// import placeholderThumb from "../images/placeholder.jpg";
+import fitnessTracker from "../images/fitnessTracker.jpg";
 
 function Portfolio() {
   return (
@@ -79,13 +80,13 @@ function Portfolio() {
           </figure>
 
           <figure className="effect-bubba">
-            <img src={placeholderThumb} className="thumbnail" alt="" />
-            <a href="#portfolio">
+            <img src={fitnessTracker} className="thumbnail" alt="" />
+            <a href="#portfolioFitnessTracker">
               <figcaption>
                 <h2>
-                  Your Next
+                  Fitness
                   <br />
-                  Project
+                  Tracker
                 </h2>
               </figcaption>
             </a>

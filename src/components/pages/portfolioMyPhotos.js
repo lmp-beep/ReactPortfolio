@@ -43,7 +43,7 @@ function PortfolioMyPhotos() {
 
       <Navbar className="portfolio-sidenav">
         <Nav>
-          <Nav.Link as={Link} to="/portfolioNewsFlash">
+          <Nav.Link as={Link} to="/portfolioFitnessTracker">
             <img
               src={arrowRight}
               className="port-sidenav"

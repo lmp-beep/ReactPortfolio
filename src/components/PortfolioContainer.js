@@ -10,7 +10,8 @@ import Contact from "./pages/contact";
 import PortfolioNewsFlash from "./pages/portfolioNewsFlash";
 import PortfolioVA from "./pages/portfolioVA";
 import PortfolioMyPhotos from "./pages/portfolioMyPhotos";
-import PortfolioPlaceholder from "./pages/portfolioPlaceholder";
+import PortfolioFitnessTracker from "./pages/portfolioFitnessTracker";
+// import PortfolioPlaceholder from "./pages/portfolioPlaceholder";
 
 const App = () => {
   return (
@@ -38,8 +39,8 @@ const App = () => {
           <Route exact path="/portfolioMyPhotos">
             <PortfolioMyPhotos />
           </Route>
-          <Route exact path="/portfolioPlaceholder">
-            <PortfolioPlaceholder />
+          <Route exact path="/portfolioFitnessTracker">
+            <PortfolioFitnessTracker />
           </Route>
         </Switch>
       </div>
