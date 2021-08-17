@@ -4,7 +4,7 @@
 
 <br/><br/>
 
-Deployed Site => https://lmp-beep.github.io/ReactPortfolio/
+Deployed Site => https://lpessin.com/
 
 <br/><br/>
 
