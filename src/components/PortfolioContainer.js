@@ -11,6 +11,7 @@ import PortfolioNewsFlash from "./pages/portfolioNewsFlash";
 import PortfolioVA from "./pages/portfolioVA";
 import PortfolioMyPhotos from "./pages/portfolioMyPhotos";
 import PortfolioFitnessTracker from "./pages/portfolioFitnessTracker";
+import PortfolioBookSearch from "./pages/portfolioBookSearch";
 // import PortfolioPlaceholder from "./pages/portfolioPlaceholder";
 
 const App = () => {
@@ -41,6 +42,9 @@ const App = () => {
           </Route>
           <Route exact path="/portfolioFitnessTracker">
             <PortfolioFitnessTracker />
+          </Route>
+          <Route exact path="/portfolioBookSearch">
+            <PortfolioBookSearch />
           </Route>
         </Switch>
       </div>

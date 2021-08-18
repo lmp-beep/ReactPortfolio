@@ -1,11 +1,11 @@
 import React from "react";
 
 import logo from "../images/LPlogo.png";
-import fitnessTrackerBanner from "../images/fitnessTrackerBanner.jpg";
-import fitnessTrackerMonitor from "../images/fitnessTrackerMonitor.jpg";
-import Screenshot1 from "../images/fitnessTrackerScreenshot1.jpg";
-import Screenshot2 from "../images/fitnessTrackerScreenshot2.jpg";
-import Screenshot3 from "../images/fitnessTrackerScreenshot3.jpg";
+import bookSearchBanner from "../images/bookSearchBanner.jpg";
+import bookSearchMonitor from "../images/bookSearchMonitor.jpg";
+import Screenshot1 from "../images/bookSearchScreenshot1.jpg";
+import Screenshot2 from "../images/bookSearchScreenshot2.jpg";
+import Screenshot3 from "../images/bookSearchScreenshot3.jpg";
 
 import arrowLeft from "../images/chevron-left.png";
 import arrowRight from "../images/chevron-right.png";
@@ -15,7 +15,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 
-function portfolioFitnessTracker() {
+function portfolioBookSearch() {
   return (
     <div>
       <header className="App-header">
@@ -45,7 +45,7 @@ function portfolioFitnessTracker() {
 
       <Navbar className="portfolio-sidenav">
         <Nav>
-          <Nav.Link as={Link} to="/portfolioBookSearch">
+          <Nav.Link as={Link} to="/portfolioNewsFlash">
             <img
               src={arrowRight}
               className="port-sidenav"
@@ -54,7 +54,7 @@ function portfolioFitnessTracker() {
             />
           </Nav.Link>
 
-          <Nav.Link as={Link} to="/portfolioMyPhotos">
+          <Nav.Link as={Link} to="/portfolioFitnessTracker">
             <img
               src={arrowLeft}
               className="port-sidenav"
@@ -71,12 +71,12 @@ function portfolioFitnessTracker() {
 
       <div className="body-info">
         <div>
-          <img src={fitnessTrackerBanner} className="header-image" alt="" />
+          <img src={bookSearchBanner} className="header-image" alt="" />
         </div>
 
         <div className="visit-btns">
           <a
-            href="https://lmp-fitness-tracker.herokuapp.com/"
+            href="https://lmp-book-search.herokuapp.com/"
             target="blank"
           >
             <button className="visit-button" id="visit-website">
@@ -86,7 +86,7 @@ function portfolioFitnessTracker() {
           <br></br>
           <br></br>
           <a
-            href="https://github.com/lmp-beep/18-FitnessTracker"
+            href="https://github.com/lmp-beep/Books"
             target="blank"
           >
             <button className="visit-button" id="visit-github">
@@ -98,16 +98,16 @@ function portfolioFitnessTracker() {
         <br></br>
 
         <div className="description">
-          <p>This Fitness Tracker App uses Express, Mongoose and MongoDB Atlas to create and track daily workouts. The user can enter weight, sets, reps and duration for resistance exercises, and enter distance and duration for cardio exercises. The user can then access the combined weight of multiple exercises, and the total duration of each workout, for the past seven days in convenient charts on the Dashboard page.</p>
+          <p>The code for this Google Books API search engine was refactored from a RESTful API to a GraphQL API with Apollo Server. The purpose of the refactor is to optimize the data fetch to query only the specific information needed. A user can create an account, search for books, and save them to a list. The user can then see their saved books and also remove books from their list.</p>
 
-          <p className="description">Technologies Used: Express, MongoDB, Atlas, Mongoose, Node, HTML, CSS, JavaScript, Heroku </p>
+          <p className="description">Technologies Used: MERN Stack (MongoDB, Express, React, Node), Mongoose, Apollo Server, JavaScript, HTML, CSS, Heroku, Bcrypt, JSON Web Token, Bootstrap, GraphQL</p>
         </div>
 
         <br></br>
         <br></br>
 
         <div>
-          <img src={fitnessTrackerMonitor} className="image-monitor" alt="" />
+          <img src={bookSearchMonitor} className="image-monitor" alt="" />
         </div>
 
         <br></br>
@@ -124,9 +124,10 @@ function portfolioFitnessTracker() {
           <br></br>
           <br></br>
         </div>
+
       </div>
     </div>
   );
 }
 
-export default portfolioFitnessTracker;
+export default portfolioBookSearch;

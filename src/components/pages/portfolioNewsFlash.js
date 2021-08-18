@@ -52,7 +52,7 @@ function PortfolioNewsFlash() {
             />
           </Nav.Link>
 
-          <Nav.Link as={Link} to="/portfolioFitnessTracker">
+          <Nav.Link as={Link} to="/portfolioBookSearch">
             <img
               src={arrowLeft}
               className="port-sidenav"

@@ -17,13 +17,13 @@ Deployed Site => https://lpessin.com/
 >* Add validation to contact form
 >* Fix side nav opacity
 >* Fix mobile sizing
+>* Update Fitness Tracker Page w new photos
+>* Make Book Search app pretty - then update portfolio page
 
 ## Add Projects:
 >* Weather Dashboard
 >* Note Taker
 >* Tech Blog
->* Fitness Tracker
->* Book Search Engine
 >* Redux Store
 >* Murdering Green
 
