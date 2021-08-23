@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/ReactPortfolio/static/css/main.97c3c43e.chunk.css",
+    "main.js": "/ReactPortfolio/static/js/main.d0ca1d20.chunk.js",
+    "main.js.map": "/ReactPortfolio/static/js/main.d0ca1d20.chunk.js.map",
+    "runtime-main.js": "/ReactPortfolio/static/js/runtime-main.38dcf064.js",
+    "runtime-main.js.map": "/ReactPortfolio/static/js/runtime-main.38dcf064.js.map",
+    "static/js/2.f41f36f3.chunk.js": "/ReactPortfolio/static/js/2.f41f36f3.chunk.js",
+    "static/js/2.f41f36f3.chunk.js.map": "/ReactPortfolio/static/js/2.f41f36f3.chunk.js.map",
+    "index.html": "/ReactPortfolio/index.html",
+    "static/css/main.97c3c43e.chunk.css.map": "/ReactPortfolio/static/css/main.97c3c43e.chunk.css.map",
+    "static/js/2.f41f36f3.chunk.js.LICENSE.txt": "/ReactPortfolio/static/js/2.f41f36f3.chunk.js.LICENSE.txt",
+    "static/media/LPlogo.721abe76.png": "/ReactPortfolio/static/media/LPlogo.721abe76.png",
+    "static/media/LPlogoFull.329cd260.png": "/ReactPortfolio/static/media/LPlogoFull.329cd260.png",
+    "static/media/frame.734a9990.png": "/ReactPortfolio/static/media/frame.734a9990.png",
+    "static/media/myPhotos.755f0f39.jpg": "/ReactPortfolio/static/media/myPhotos.755f0f39.jpg",
+    "static/media/myPhotosBanner.9d8fdffc.jpg": "/ReactPortfolio/static/media/myPhotosBanner.9d8fdffc.jpg",
+    "static/media/myPhotosMonitor.0ce4e4ed.jpg": "/ReactPortfolio/static/media/myPhotosMonitor.0ce4e4ed.jpg",
+    "static/media/myPhotosScreenshot.c00a1b0b.jpg": "/ReactPortfolio/static/media/myPhotosScreenshot.c00a1b0b.jpg",
+    "static/media/newsFlash.37c80f27.jpg": "/ReactPortfolio/static/media/newsFlash.37c80f27.jpg",
+    "static/media/newsFlashBanner4.1ceaa1c5.jpg": "/ReactPortfolio/static/media/newsFlashBanner4.1ceaa1c5.jpg",
+    "static/media/newsFlashMonitor.a10030e5.jpg": "/ReactPortfolio/static/media/newsFlashMonitor.a10030e5.jpg",
+    "static/media/newsFlashScreenshot.fe5241bc.jpg": "/ReactPortfolio/static/media/newsFlashScreenshot.fe5241bc.jpg",
+    "static/media/placeholder.3364bfc3.jpg": "/ReactPortfolio/static/media/placeholder.3364bfc3.jpg",
+    "static/media/portfolioPlaceholderBanner.9042e10b.jpg": "/ReactPortfolio/static/media/portfolioPlaceholderBanner.9042e10b.jpg",
+    "static/media/portfolioPlaceholderMonitor.4af314da.jpg": "/ReactPortfolio/static/media/portfolioPlaceholderMonitor.4af314da.jpg",
+    "static/media/vaBack.985addfc.jpg": "/ReactPortfolio/static/media/vaBack.985addfc.jpg",
+    "static/media/vaBanner.d4eeaca1.jpg": "/ReactPortfolio/static/media/vaBanner.d4eeaca1.jpg",
+    "static/media/vaClinicsScreenshot.1fa24552.jpg": "/ReactPortfolio/static/media/vaClinicsScreenshot.1fa24552.jpg",
+    "static/media/vaFormsScreenshot.6fa53320.jpg": "/ReactPortfolio/static/media/vaFormsScreenshot.6fa53320.jpg",
+    "static/media/vaHomeScreenshot.2e0ea16c.jpg": "/ReactPortfolio/static/media/vaHomeScreenshot.2e0ea16c.jpg",
+    "static/media/vaMapScreenshot.106ee7ce.jpg": "/ReactPortfolio/static/media/vaMapScreenshot.106ee7ce.jpg",
+    "static/media/vaMonitor.eeaf17ad.jpg": "/ReactPortfolio/static/media/vaMonitor.eeaf17ad.jpg",
+    "static/media/vaPhotographyScreenshot.27076b6a.jpg": "/ReactPortfolio/static/media/vaPhotographyScreenshot.27076b6a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38dcf064.js",
+    "static/js/2.f41f36f3.chunk.js",
+    "static/css/main.97c3c43e.chunk.css",
+    "static/js/main.d0ca1d20.chunk.js"
+  ]
+}
