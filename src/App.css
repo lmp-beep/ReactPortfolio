@@ -243,10 +243,10 @@ a {
 
 /* ---------------------PORTFOLIO----------------------------- */
 
-.portfolio.col-sm-6.col-md-4 {
+/* .portfolio.col-sm-6.col-md-4 {
   height: 500px;
   border-radius: 50px;
-}
+} */
 
 .grid {
   position: relative;
@@ -261,8 +261,8 @@ a {
   float: left;
   overflow: hidden;
   margin: 10px 1%;
-  min-width: 320px;
-  max-width: 479px;
+  min-width: 200px;
+  max-width: 300px;
   max-height: 360px;
   width: 46%;
   background: #3085a3;
@@ -301,7 +301,7 @@ a {
 .grid figure h2 {
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   word-wrap: break-word;
 }
@@ -359,18 +359,38 @@ figure.effect-bubba:hover h2 {
   transform: translate3d(0, 0, 0);
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 695px) {
   .grid {
-    padding: 1em 0 1em 7em;
+    padding: 2em 0 1em 8em;
   }
-  .grid figure h2 {
-    font-size: 10px;
-  }
+  #portfolio.nav-link,
+#about.nav-link,
+#contact.nav-link {
+  font-size: 10px;
+  letter-spacing: 7px;
+  padding-top: 10px;
+}
+  /* .grid figure h2 {
+    font-size: 2px;
+  } */
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
+  .grid {
+    padding: 1em 0 1em 8em;
+  }
+  #portfolio.nav-link,
+#about.nav-link,
+#contact.nav-link {
+  font-size: 12px;
+  letter-spacing: 7px;
+  padding-top: 10px;
+}
+}
+
+@media screen and (max-width: 1086px) {
   .grid figure h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 

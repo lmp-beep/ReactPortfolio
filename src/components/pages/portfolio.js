@@ -45,7 +45,7 @@ function Portfolio() {
       </header>
 
       <div className="grid">
-        <div className="row hide-portfolio">
+        <div className="row">
           <figure className="effect-bubba">
             <img src={newsFlashThumb} className="thumbnail" alt="" />
             <a href="#portfolioNewsFlash">
